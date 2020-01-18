@@ -2,16 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Better Portuguese</title>
 </head>
 
 <body>
-    <h1>This is a test</h1>
-    <p>Hello world</p>
-    <img src="./cat.jpg" alt="car" witdh="200px" height="200px" />
+  <div id="wrapper">
+    <div id="innerWrapper">
+      <div id="innerInnerWrapper">
+        <button id="start" class="button button-black" autofocus>Start</button>
+        <div id="instructions" hidden>
+          <!-- Make this be rendered as a tooltip from a help icon in the upper-right corner -->
+          <table>
+            <tbody>
+              <tr>
+                <td class="blue">space</td>
+                <td>Repeat audio</td>
+              </tr>
+              <tr>
+                <td class="blue">1</td>
+                <td>Select option 1</td>
+              </tr>
+              <tr>
+                <td class="blue">2</td>
+                <td>Select option 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="score" hidden>0/0</div>
+        <div id="question" hidden></div>
+        <div id="options" hidden>
+          <button id="first-option" class="button button-gray" hidden></button>
+          <button id="second-option" class="button button-black" hidden></button>
+        </div>
+
+        <div id="message" hidden></div>
+      </div>
+    </div>
+  </div>
+  <script src="./bundle.js"></script>
 </body>
 
 </html>
